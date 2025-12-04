@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Statistiques de la Bibliothèque</title>
+       <style>
+        body { font-family: 'Times New Roman', Tahoma, Geneva, Verdana, sans-serif; max-width: 800px; margin: 20px auto; background-color: #f4f4f9; color: #333; }
+        h1 { text-align: center; color: #000000; }
+        h2 { border-bottom: 2px solid #000000; padding-bottom: 10px; margin-top: 30px; color: #000000; }
+        table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #6b0909; color: white; }
+        tr:hover { background-color: #f1f1f1; }
+        
+    
+        .graph-row { margin-bottom: 10px; display: flex; align-items: center; }
+        .graph-label { width: 150px; font-weight: bold; }
+        .bar-container { flex-grow: 1; background-color: #e0e0e0; border-radius: 5px; overflow: hidden; margin-right: 10px; }
+        .bar { height: 25px; background-color: #27ae60; text-align: right; padding-right: 5px; line-height: 25px; color: white; font-size: 0.8em; white-space: nowrap;}
+        .stat-box { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; font-size: 1.2em; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+    <h1>Statistiques de la Bibliothèque</h1>
+    
+    <div class="stat-box">
+        <strong>Total livres :</strong> 203
+    </div>
+
+<h2>Top 5 Auteurs</h2>
+<table><tr><th>Nom</th><th>Livres</th><th>Pourcentage</th></tr>
+<tr><td>Jane Austen</td><td>13</td><td>6%</td></tr>
+<tr><td>Herman Melville</td><td>13</td><td>6%</td></tr>
+<tr><td>Fyodor Dostoevsky</td><td>13</td><td>6%</td></tr>
+<tr><td>Ray Bradbury</td><td>12</td><td>5%</td></tr>
+<tr><td>Marcel Proust</td><td>12</td><td>5%</td></tr>
+</table>
+<h2>Top 5 Genres</h2>
+<table><tr><th>Nom</th><th>Livres</th><th>Pourcentage</th></tr>
+<tr><td>Dystopie</td><td>25</td><td>12%</td></tr>
+<tr><td>Policier</td><td>19</td><td>9%</td></tr>
+<tr><td>Aventure</td><td>19</td><td>9%</td></tr>
+<tr><td>Science-Fiction</td><td>18</td><td>8%</td></tr>
+<tr><td>Historique</td><td>18</td><td>8%</td></tr>
+</table>
+<h2>Top 5 Années</h2>
+<table><tr><th>Nom</th><th>Livres</th><th>Pourcentage</th></tr>
+<tr><td>2018</td><td>5</td><td>2%</td></tr>
+<tr><td>1988</td><td>5</td><td>2%</td></tr>
+<tr><td>2019</td><td>4</td><td>1%</td></tr>
+<tr><td>1974</td><td>4</td><td>1%</td></tr>
+<tr><td>1873</td><td>4</td><td>1%</td></tr>
+</table>
+<h2>Distribution par Genre</h2>
+<div class='graph-section'>
+<div class='graph-row'>
+  <div class='graph-label'>Dystopie</div>
+  <div class='bar-container'><div class='bar' style='width: 12%;'>12%</div></div>
+</div>
+<div class='graph-row'>
+  <div class='graph-label'>Policier</div>
+  <div class='bar-container'><div class='bar' style='width: 9%;'>9%</div></div>
+</div>
+<div class='graph-row'>
+  <div class='graph-label'>Aventure</div>
+  <div class='bar-container'><div class='bar' style='width: 9%;'>9%</div></div>
+</div>
+<div class='graph-row'>
+  <div class='graph-label'>Science-Fiction</div>
+  <div class='bar-container'><div class='bar' style='width: 8%;'>8%</div></div>
+</div>
+<div class='graph-row'>
+  <div class='graph-label'>Historique</div>
+  <div class='bar-container'><div class='bar' style='width: 8%;'>8%</div></div>
+</div>
+<div class='graph-row'>
+  <div class='graph-label'>Fantastique</div>
+  <div class='bar-container'><div class='bar' style='width: 8%;'>8%</div></div>
+</div>
+<div class='graph-row'>
+  <div class='graph-label'>Roman</div>
+  <div class='bar-container'><div class='bar' style='width: 7%;'>7%</div></div>
+</div>
+<div class='graph-row'>
+  <div class='graph-label'>Fantasy</div>
+  <div class='bar-container'><div class='bar' style='width: 7%;'>7%</div></div>
+</div>
+</div>
+<h2>Livres par Décennie</h2>
+<table><tr><th>Nom</th><th>Livres</th><th>Pourcentage</th></tr>
+<tr><td>1850s</td><td>6</td><td>2%</td></tr>
+<tr><td>1890s</td><td>8</td><td>3%</td></tr>
+<tr><td>1930s</td><td>8</td><td>3%</td></tr>
+<tr><td>1860s</td><td>9</td><td>4%</td></tr>
+<tr><td>1910s</td><td>9</td><td>4%</td></tr>
+<tr><td>1970s</td><td>9</td><td>4%</td></tr>
+<tr><td>1920s</td><td>10</td><td>4%</td></tr>
+<tr><td>1950s</td><td>10</td><td>4%</td></tr>
+<tr><td>1880s</td><td>11</td><td>5%</td></tr>
+<tr><td>1960s</td><td>11</td><td>5%</td></tr>
+<tr><td>1980s</td><td>11</td><td>5%</td></tr>
+<tr><td>2000s</td><td>11</td><td>5%</td></tr>
+<tr><td>2020s</td><td>11</td><td>5%</td></tr>
+<tr><td>1900s</td><td>13</td><td>6%</td></tr>
+<tr><td>1940s</td><td>13</td><td>6%</td></tr>
+<tr><td>1990s</td><td>14</td><td>6%</td></tr>
+<tr><td>1870s</td><td>16</td><td>7%</td></tr>
+<tr><td>2010s</td><td>23</td><td>11%</td></tr>
+</table>
+</body></html>
